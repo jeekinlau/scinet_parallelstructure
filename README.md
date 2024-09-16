@@ -22,6 +22,14 @@ R
 install.packages("ParallelStructure", repos="http://R-Forge.R-project.org")
 ```
 
+
+## Stucture file input format
+The input file for parallelstructure is a bit finicky and has to be very specific.
+![screenshot of input](/screenshots/Screenshot%202024-09-16%20134240.png)
+
+The first column is the individual ID (two rows per individual). The second column is the population ID (just put all as one pop if you do not know). The remainin columns are markers information. 1/1 is homozygous for ref allele, 1/2 is heterozygous, and 2/2 is homozygous for alt allele.
+
+
 ## General outline of scripts
 
 Two main scripts. One slurm job script and one R script.
